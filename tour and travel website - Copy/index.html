@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="images1/abc.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <img src="images/lo5.png" style="height: 55px; width: 150px;" alt="">
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#services">services</a>
+        <a href="#protect">rooms</a>
+        <a href="#food">food</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Wellcome to hotel</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> xyz, India</p></i><br>
+                        <p><i style='font-size:24px' class='fas'>&#xf87b;</i> 9748876857</p><br>
+                            <div class = "rating">
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "fas fa-star"></i></span>
+                                <span><i class = "far fa-star"></i></span>
+                             540 REVIEWS
+                            </div>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<section class="symtoms">
+
+    <div class="content">
+        <h1 class="heading">About Us</h1>
+        <p>Centrally Located 5 Star Hotel & Resort Near xyz for Leisure Travel. Experience luxury at Hotel, one of the finest 5 star hotel.</p>
+    </div>
+
+    <div class="image">
+        <img src="images/bora.png" alt="">
+    </div>
+
+</section>
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/logo2.gif" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Name</h3>
+                <input type="text" placeholder="full name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fa fa-wifi" style="color: red;"></i>
+            <h3>Free Internet Access</h3>
+        </div>
+        <div class="box">
+            <i class='fas fa-concierge-bell'  style="color: rgb(160, 136, 91);"></i>
+            <h3>Room Service</h3>
+        </div>
+        <div class="box">
+            <i class='fas fa-walking'  style="color: rgb(51, 69, 73);"></i>
+            <h3>Fitness Center</h3>
+        </div>
+        <div class="box">
+            <i class = "fas fa-broom"  style="color: rgb(115, 122, 74);"></i>
+            <h3>House Keeping</h3>
+        </div>
+        <div class="box">
+            <i class='fas fa-spa'  style="color: rgb(21, 255, 0);"></i>
+            <h3>Spa</h3>
+        </div>
+        <div class="box">
+            <i class='fas fa-swimmer'  style="color: rgb(0, 255, 255);"></i>
+            <h3>pool</h3>
+        </div>
+
+    </div>
+    <!-- spa section start -->
+
+ <section class="class section style-cards">
+    <h1 class="heading">Our <span>Hotel</span></h1>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="card-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="desc-3">
+                    <h3 class="mb-2">Yoga Training</h3>
+                    <p>
+                        The word “Yoga” essentially means, “that which brings you to reality”. Literally, it means
+                        “union.” Union means it
+                        brings you to the ultimate reality, where individual manifestations of life are surface
+                        bubbles in the process of
+                        creation.
+                    </p>
+                </div>
+                <img src="images/tv.png" alt="Yoga" data-aos="fade-up" data-aos-delay="500">
+                <video data-aos="fade-up" data-aos-delay="500" autoplay playsinline muted loop>
+                    <source src="images/Pexels Videos 2790143.mp4"></video>
+            </div>
+            <div class="card-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/tv.png" alt="Yoga" data-aos="fade-up" data-aos-delay="500">
+                <video data-aos="fade-up" data-aos-delay="500" autoplay playsinline muted loop>
+                    <source src="images/gym2.mp4"></video>
+
+                <div class="desc-2">
+                    <h3 class="mb-2">Fitness Centre</h3>
+                    <p>
+                        This 10,000 sq ft. wellness centre on the premises of the hotel situated in Kolkata, comprises a 2,200 sq ft fully equipped gymnasium featuring the latest cardiovascular equipment, as well as separate spas for men and women, with a steam room, a sauna, a whirlpool bath and a chill pool.
+                    </p>
+                </div>
+            </div>
+            <div class="card-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="desc-3">
+                    <h3 class="mb-2">Spa</h3>
+                    <p>
+                        At Club Prana Explore our wide range of relaxing services including massages, body wraps, and facials. This urban oasis will reduce your stress in the midst of the bustling city.
+                    </p>
+                </div>
+                <img src="images/tv.png" alt="Yoga" data-aos="fade-up" data-aos-delay="500">
+                <video data-aos="fade-up" data-aos-delay="500" autoplay playsinline muted loop>
+                    <source src="images/spa.mp4"></video>
+            </div>
+        </div>
+    </div>
+ </section>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- rooms section starts  -->
+
+<section class="protect" id="protect">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>o</span>
+        <span>o</span>
+        <span>m</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/king.jpg"alt="">
+            <h3>King Bed</h3>
+            <p>Relax in a spacious 36-sqmt room in high floors overlooking pool or city features Malaysian teak floors, separate work area, Italian marble bath with rain shower.</p>
+            <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/suite.jpg" alt="">
+            <h3>Suite King</h3>
+            <p>Relax in a 75 sq.mt suite that offers spectacular pool view. Well-appointed Malaysian teak floors and textured walls complementing living room. </p>
+            <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/Diplomatic Suite.jpg" alt="">
+            <h3>Diplomatic Suite</h3>
+            <p>Floor-to-ceiling windows and a spacious terrace with glass doors offer spectacular views of Kolkata from a 120 sqmt suite. Contemporary interiors include living.</p>
+            <a href="#" class="btn">book now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/Presidential Suite.jpg" alt="">
+            <h3>Presidential Suite</h3>
+            <p>Luxurious 216 sqmt top-floor suite with pool views features leather-paneled study, living and dining areas with handmade artwork.</p>
+            <a href="#" class="btn">book now</a>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="heading"> Special <span>Events</span></h1>
+
+    <section class="prevent">
+
+
+        <div class="row">
+    
+            <div class="image">
+                <img src="images/Screenshot.png" alt="">
+            </div>
+    
+            <div class="content">
+                <h1 class="heading"> <span>Weddings</span> </h1>
+                <p>Hotel is slated to be the preferred destination for an intimate or a lavish wedding. Whether you wish for a small and intimate ceremony or an extravagant setting, we will make your event memorable and most importantly, one-of-a-kind. Our team of specialists work closely with you and your families to develop a wedding that is reflecting your personality and individual taste. </p>
+            </div>
+    
+        </div>
+    
+        <div class="row">
+    
+            <div class="content">
+                <h1 class="heading"><span>Meetings</span></h1>
+                <p>The Hotel brand has long enjoyed a well-earned reputation for excellence in the field of banqueting and catering. A professional and attentive team will oversee that every event is successful and that event needs meet guests’ satisfaction.</p>
+            </div>
+    
+            <div class="image">
+                <img src="images/Screenshot1.png" alt="">
+            </div>
+    
+        </div>
+    
+    </section>
+
+</section>
+<br>
+<br>
+<h1 class="heading">
+    <span>f</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+</h1>
+
+<!-- rooms section end  -->
+
+<!-- food section start -->
+
+<section class="food" id="food">
+
+    <div class="content">
+        <h3>food made with love</h3>
+        <a href="#" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="images1/home-img.png" alt="">
+    </div>
+
+
+
+
+
+ <!-- speciality section starts  -->
+
+ <section class="speciality" id="speciality">
+
+    <h1 class="heading"> our <span>speciality</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="images1/s-img-1.jpg" alt="">
+            <div class="content">
+                <img src="images1/s-1.png" alt="">
+                <h3>tasty burger</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images1/s-img-2.jpg" alt="">
+            <div class="content">
+                <img src="images1/s-2.png" alt="">
+                <h3>tasty pizza</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images1/s-img-3.jpg" alt="">
+            <div class="content">
+                <img src="images1/s-3.png" alt="">
+                <h3>cold ice-cream</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images1/s-img-4.jpg" alt="">
+            <div class="content">
+                <img src="images1/s-4.png" alt="">
+                <h3>cold drinks</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images1/s-img-5.jpg" alt="">
+            <div class="content">
+                <img src="images1/s-5.png" alt="">
+                <h3>tasty sweets</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images1/s-img-6.jpg" alt="">
+            <div class="content">
+                <img src="images1/s-6.png" alt="">
+                <h3>healty breakfast</h3>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+
+ </section>
+
+ <!-- speciality section ends -->
+
+ <!-- popular section starts  -->
+
+ <section class="popular" id="popular">
+
+    <h1 class="heading"> most <span>popular</span> foods </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images1/p-1.jpg" alt="">
+            <h3>tasty burger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <img src="images1/p-2.jpg" alt="">
+            <h3>tasty cakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <img src="images1/p-3.jpg" alt="">
+            <h3>tasty sweets</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <img src="images1/p-4.jpg" alt="">
+            <h3>tasty cupcakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <img src="images1/p-5.jpg" alt="">
+            <h3>cold drinks</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <img src="images1/p-6.jpg" alt="">
+            <h3>cold ice-cream</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+ </section>
+
+  <!-- popular section ends -->
+
+ <!-- steps section starts  -->
+
+ <div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="images1/step-1.jpg" alt="">
+            <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+            <img src="images1/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="images1/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="images1/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+
+ </div>
+
+ <!-- steps section ends -->
+</section>
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images1/g-1.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-2.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-3.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-4.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-5.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-6.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-7.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-8.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="images1/g-9.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.jpg" alt="">
+                    <h3>kausturi roy chowdhury</h3>
+                    <p>It was great experience for me and all the services in hotel was accurate. Moreover the plantation was also clean. Not only this, rooms and washrooms were also good in cleanliness. Thank you so much for serving each and every service with proper arrangements.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Saikat Dhar</h3>
+                    <p>It was great experience for me and all the services in hotel was accurate. Moreover the plantation was also clean. Not only this, rooms and washrooms were also good in cleanliness. Thank you so much for serving each and every service with proper arrangements.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.jpg" alt="">
+                    <h3>subrata paul</h3>
+                    <p>It was great experience for me and all the services in hotel was accurate. Moreover the plantation was also clean. Not only this, rooms and washrooms were also good in cleanliness. Thank you so much for serving each and every service with proper arrangements.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.jpg" alt="">
+                    <h3>Atanu Paul</h3>
+                    <p>It was great experience for me and all the services in hotel was accurate. Moreover the plantation was also clean. Not only this, rooms and washrooms were also good in cleanliness. Thank you so much for serving each and every service with proper arrangements.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic5.jpg" alt="">
+                    <h3>Ayan Nag</h3>
+                    <p>It was great experience for me and all the services in hotel was accurate. Moreover the plantation was also clean. Not only this, rooms and washrooms were also good in cleanliness. Thank you so much for serving each and every service with proper arrangements.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic6.jpg" alt="">
+                    <h3>Koushik Pahari</h3>
+                    <p>It was great experience for me and all the services in hotel was accurate. Moreover the plantation was also clean. Not only this, rooms and washrooms were also good in cleanliness. Thank you so much for serving each and every service with proper arrangements.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.png" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+              <a href=""><i class="fab fa-facebook" style="font-size:40px; color: rgb(0, 0, 255);"></i></a>
+              <a href=""><i class="fab fa-instagram" style="font-size:40px; color: rgb(255, 0, 0);"></i></a>
+              <a href=""><i class="fa fa-twitter" style="font-size:40px;color:rgb(60, 180, 228)"></i></a>
+              <a href=""><i class="fa fa-linkedin-square" style="font-size:40px;color:rgb(5, 73, 100)"></i></a> 
+        </div>
+        <div class="box">
+            <h3>Map, Parking + Transportation</h3>
+
+         <div class="column right">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29466.52113767601!2d88.3813252978289!3d22.60470405062253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027606dc300fb1%3A0x1e8c3008eba56670!2sSouth%20Dumdum%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1617550356401!5m2!1sen!2sin"
+                width="280" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit">Created By <span>Subrata paul</span> | <span class="far fa-copyright"></span> 2021.</h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
